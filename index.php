@@ -21,7 +21,7 @@
                 ?>
 
                 <h1>Hello, world!</h1>
-                <button class="btn btn-primary">testing</button>
+                <button class="btn btn-primary">View</button>
             </div>
         </div>
     </div>
