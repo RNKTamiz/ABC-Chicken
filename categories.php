@@ -20,7 +20,7 @@
 </div>
 <div class="py-5">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-md-12">
 
 
@@ -35,7 +35,7 @@
                             foreach($categories as $item)
                             {
                                 ?>
-                                    <div class="col-md-4 mb-2">
+                                    <div class="col-md-4 mb-3">
                                         <a href="products.php?category=<?= $item['slug']; ?>">
                                             <div class="card shadow card-body h-100">
                                                 <img src="uploads/<?= $item['image']; ?>" alt="Category image" class="w-100 h-100">
