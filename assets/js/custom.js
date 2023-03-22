@@ -8,7 +8,7 @@ $(document).ready(function(){
 
         value = isNaN(value) ? 0: value;
 
-        if(value < 10){
+        if(value < 100){
             value++;
            
             $(this).closest('.product-data').find('.input-qty').val(value);
@@ -31,5 +31,30 @@ $(document).ready(function(){
             $(this).closest('.product-data').find('.input-qty').val(value);
 
         }
+        alert("no");
     });
-});decrement-btn
+
+    $('.addToCartBtn').click(function (e) { 
+        e.preventDefault();
+
+        var qty = $(this).closest('.product-data').find('.input-qty').val();
+        var prod_id = $(this).val();
+        
+        $.ajax({
+            method: "POST",
+            url: "functions/handlecart.php",
+            data: {
+                "prod_id":prod_id,
+                "prod_qty":qty,
+                "scope":"add"
+            },
+            success: function (response) {
+                if(response==401)
+                {
+                    alert("Login to continue");
+                }
+            }
+        });
+        
+    });
+});

@@ -56,11 +56,13 @@ elseif(isset($_POST['login_btn']))
     {
         $_SESSION['auth']=true;
         $userdata = mysqli_fetch_array($login_query_run);
+        $user_id = $userdata['id'];
         $username = $userdata['name'];
         $useremail = $userdata['email'];
         $role_as = $userdata['role_as'];
 
         $_SESSION['auth_user'] = [
+            'user_id' => $user_id,
             'name' => $username,
             'email' => $useremail
             
