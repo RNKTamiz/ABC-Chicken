@@ -20,10 +20,13 @@
                     }
                 ?>
 
-                <h1>Hello, world!</h1>
-                <button class="btn btn-primary">Testing</button>
+                <h1>Hello, world! <i class="fa fa-user"></i></h1>
+                <button class="btn btn-primary">testing</button>
             </div>
         </div>
     </div>
 </div>
+
+
+
 <?php include ('includes/footer.php'); ?>

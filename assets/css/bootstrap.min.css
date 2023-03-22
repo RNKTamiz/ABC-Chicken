@@ -321,6 +321,34 @@ legend {
     white-space: normal
 }
 
+.fw-lighter {
+    font-weight: lighter !important
+}
+
+.fw-light {
+    font-weight: 300 !important
+}
+
+.fw-normal {
+    font-weight: 400 !important
+}
+
+.fw-medium {
+    font-weight: 500 !important
+}
+
+.fw-semibold {
+    font-weight: 600 !important
+}
+
+.fw-bold {
+    font-weight: 700 !important
+}
+
+.fw-bolder {
+    font-weight: bolder !important
+}
+
 progress {
     vertical-align: baseline
 }
@@ -5344,7 +5372,9 @@ input[type=submit].btn-block {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem
+    border-radius: .25rem;
+    align-self: center;
+    
 }
 
 .card>hr {

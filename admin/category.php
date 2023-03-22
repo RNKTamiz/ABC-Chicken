@@ -1,17 +1,16 @@
 <?php 
-
-include('includes/header.php');
 include('../middleware/adminMiddleware.php');
+include('includes/header.php');
 
 ?>
 
-<div class="container">
+<div class="container"> 
     <div class="row">
         <div class="card">
             <div class="card-header">
                <h4>Categories</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body" id="category_table">
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -47,10 +46,10 @@ include('../middleware/adminMiddleware.php');
                                                 
                                             </td>
                                             <td>
-                                            <form action="code.php" method="post">
-                                                    <input type="hidden" name="category_id" value="<?= $item['id']; ?>">
-                                                    <button type="submit" class="btn btn-danger btn-sm" name="delete_category_btn">Delete</button>
-                                                </form>
+
+                                            <button type="button" class="btn btn-sm btn-danger delete_category_btn" value="<?= $item['id'];?>">Delete</button>
+
+
                                             </td>
                                         </tr>
 

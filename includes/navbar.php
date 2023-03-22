@@ -10,13 +10,13 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="categories">Collections</a>
         </li>
 
         <?php
           if(isset($_SESSION['auth']))
           {
-            ?>
+            ?> 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <?= $_SESSION['auth_user']['name']; ?>

@@ -1,4 +1,3 @@
-<?php session_start();?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +20,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="assets/css/material-dashboard.min.css?v=3.0.0" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
 <!-- Alertyfy Js -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>

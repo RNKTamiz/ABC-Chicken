@@ -24,10 +24,15 @@
     </div>
 </footer>
  </main>
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+ <script src="assets/js/core/bootstrap.bundle.min"></script>
+ <script src="assets/js/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/smooth-scrollbar.min.js"></script>
 
- <script src="../assets/js/core/bootstrap.bundle.min"></script>
- <script src="../assets/js/perfect-scrollbar.min.js"></script>
-  <script src="../assets/js/smooth-scrollbar.min.js"></script>
+
+  <script src="http://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 
   <!------------------ Alertyfy Js ------------------>
   
