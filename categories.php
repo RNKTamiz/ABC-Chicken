@@ -35,7 +35,7 @@
                             foreach($categories as $item)
                             {
                                 ?>
-                                    <div class="col-md-3 mb-2 mx-auto">
+                                    <div class="col-md-4 mb-2 mx-auto">
                                         <a href="products.php?category=<?= $item['slug']; ?>">
                                             <div class="card shadow card-body h-100">
                                                 <img src="uploads/<?= $item['image']; ?>" alt="Category image" class="w-100 h-100">
