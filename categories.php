@@ -36,7 +36,7 @@
                             {
                                 ?>
                                     <div class="col-md-4 mb-3">
-                                        <a href="products.php?category=<?= $item['slug']; ?>">
+                                        <a class="text-dark" href="products.php?category=<?= $item['slug']; ?>">
                                             <div class="card shadow card-body h-100">
                                                 <img src="uploads/<?= $item['image']; ?>" alt="Category image" class="w-100 h-100">
                                                 <h4 class="text-center"><?= $item['name']; ?></h4>
