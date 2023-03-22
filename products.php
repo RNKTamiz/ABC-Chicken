@@ -43,15 +43,26 @@
                             foreach($products as $item)
                             {
                                 ?>
-                    <div class="col-md-3 mb-2 mx-auto">
-                        <a href="product-view.php?product=<?= $item['slug']; ?>">
-                            <div class="card shadow card-body h-100">
-                                <img src="uploads/<?= $item['image']; ?>" alt="Product image" class="w-100 h-100">
-                                <h4 class="text-center"><?= $item['name']; ?></h4>
-                            </div>
-                        </a>
-                    </div>
-                    <?php
+                                <div class="col-md-4 mb-2">
+                                    <div class="card shadow card-body h-100">
+                                        
+                                        <a class="text-dark" href="product-view.php?product=<?= $item['slug']; ?>">
+
+                                            <img src="uploads/<?= $item['image']; ?>" alt="Product image" class="w-100 h-100 rounded" >
+                                            <h4  class="text-center"><?= $item['name']; ?></h4>
+                                        </a>
+                                        
+                                        <div class="text-center mt-3">
+                                            <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                                            <p><?= $item['small_description']; ?></p>
+                                        </div>
+
+                                        <button type="button" class="align-self-end btn btn-sm btn-block btn-primary" style="margin-top: auto;">View Details</button>
+                                    
+                                    </div>
+                                    
+                                </div>
+                                <?php
                             }
                         }
                         else{
