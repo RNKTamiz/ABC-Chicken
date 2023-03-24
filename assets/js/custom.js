@@ -31,7 +31,7 @@ $(document).ready(function(){
             $(this).closest('.product-data').find('.input-qty').val(value);
 
         }
-        alert("no");
+        
     });
 
     $('.addToCartBtn').click(function (e) { 
@@ -49,9 +49,21 @@ $(document).ready(function(){
                 "scope":"add"
             },
             success: function (response) {
-                if(response==401)
+                if(response==201)
                 {
-                    alert("Login to continue");
+                    alertify.success('Product added to cart');
+                }
+                else if(response==300)
+                {
+                    alertify.success('Product already in cart');
+                }
+                else if(response==401)
+                {
+                    alertify.success('Login to Continue');
+                }
+                else if(response==500)
+                {
+                    alertify.success('Something went wrong');
                 }
             }
         });
