@@ -68,7 +68,7 @@
                                             <input type="text" class="form-control bg-white text-center input-qty" value="<?= $citem['prod_qty'];?>" disabled>
                                             <button class="input-group-text increment-btn">+</button>
                                         </div>                         
-                                    </div>
+                                        </div>
                                     <div class="col-md-2">
                                         <h5><b>Remove</b></h5>
                                         <button class="btn btn-danger btn-sm"><i class="fa fa-trash mr-2"></i>Remove</button>
