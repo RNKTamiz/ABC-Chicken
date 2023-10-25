@@ -19,7 +19,7 @@
                 Home /
             </a>
             <a class="text-white" href="categories.php">
-                Collection /
+                Collections /
             </a>
             <?= $category['name']; ?>
         </h6>
